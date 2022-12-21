@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_POST['submit'])) {
-    $mobileno = "7017742830";
+    $mobileno = "9999999999";
     $message = "test";
     sendsms($mobileno, $message);
 }
@@ -26,7 +26,7 @@ if (isset($_POST['submit'])) {
     function sendsms($mobileno, $message)
     {
         $message = urlencode($message);
-        $sender = 'OPSERV';
+        $sender = 'ATECHSEVA';
         $apikey = '1207162143847824150';
         $baseurl = 'https://instantalerts.co/api/web/send?apikey=' . $apikey;
 
